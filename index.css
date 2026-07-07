@@ -1,48 +1,57 @@
-*{
- 
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+* {
+
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
 
-.common-btn{
+.common-btn {
     padding: 10px 20px;
     border: none;
     background: #FD6E0A;
     color: white;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-.container{
-     max-width: 1100px;
-     margin: auto;
+.container {
+    max-width: 1100px;
+    margin: auto;
 
 }
 
 /* navabr & header section strat */
 
-.header{
-background-color: #FFF8F3;
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FD6E0A;
 }
 
-.navbar{
+.header {
+    background-color: #FFF8F3;
+}
+
+.navbar {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
 
 }
-.nav-list-items{
+
+.nav-list-items {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    
+
     gap: 20px;
     align-items: center;
 
 }
-.spanr{
+
+.spanr {
     color: #FD6E0A;
     font-weight: bold;
 }
@@ -52,4 +61,312 @@ background-color: #FFF8F3;
 
 /* hero section / bannar section start  */
 
+.downlode-cv-btn {
 
+    padding: 10px 20px;
+    border: none;
+    background: #FD6E0A;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 10px;
+
+}
+
+.content-btn {
+
+    padding: 10px 20px;
+    border: 1px solid #FD6E0A;
+    background: white;
+    color: #FD6E0A;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 10px;
+
+}
+
+.btn-div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.name {
+    font-weight: 1000;
+}
+
+.banar-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: space-between;
+   
+}
+
+.banar-section-main {
+    background-color: #cca68c;
+    background: url('./img/developer.png'), url("./img/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: 5px 10px ,bottom right ;
+    
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+    overflow: hidden
+}
+
+.banar-text-div{
+    
+    padding-left: 120px;
+}
+
+
+
+.paragraph {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: rgb(73, 72, 73);
+}
+
+
+.bg-pic {
+    position: relative;
+    display: flex;
+}
+
+.hardy-pc img {
+    max-width: 550px;
+   
+
+    
+
+}
+
+
+.banar-section {
+    align-items: center;
+}
+
+.img-hardy {
+    display: flex;
+}
+
+/* about me section */
+.about-section {
+    background: #ffff;
+    padding: 80px;
+}
+
+.about-section-div {
+    background-color: #FFF8F3;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #df7641;
+
+
+
+}
+
+.about-section-div2 {
+
+    justify-content: center;
+    text-align: center;
+
+}
+
+.div-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    padding: 20px;
+}
+.box{
+    padding: 20px;
+    background-color: #ffff;
+    border: 1px dashed #df7641 ;
+    border-radius: 20px;
+
+}
+
+/* What I do section */
+.what-i-do-text-div{
+    text-align: center;
+}
+
+.what-i-do-card-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    padding: 20px;
+
+}
+.card{
+     padding: 20px;
+    background-color: #ffff;
+    border: 1px dashed #df7641 ;
+    border-radius: 20px;
+
+
+
+
+}
+.card-h3{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* A summary of My Resume section */
+
+.summary-header{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.summary-pic{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+    top: 10px;
+}
+.summary-card{
+    border: 1px dashed #df7641;
+    padding: 20px;
+    background-color: #FFF8F3;
+    border-radius: 20px;
+
+}
+.summary-card h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.summary-card h4{
+
+     margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.summary-card h6{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+.downlode-btn{
+    padding: 10px 20px;
+    border: none;
+    background: #FD6E0A;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+     text-align: center;
+      margin: auto;
+      justify-content: center;
+      display: flex;
+      margin-top: 70px;
+
+     
+    
+}
+/* My Amazing Works section */
+
+.amazing-header{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.amazing-img-part{
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns:repeat(3 , 1fr) ;
+    grid-auto-rows: 250px;
+    grid-template-areas:
+    "one two three"
+    "four two  six"
+    "four five six" ;
+
+    
+    gap: 20px;
+     
+
+}
+
+.img-1{
+    grid-area: one;
+}
+.img-2{
+    grid-area: two;
+}
+.img-3{
+    grid-area: three;
+}
+.img-4{
+    grid-area: four;
+}
+.img-5{
+    grid-area: five;
+}
+.img-6{
+    grid-area: six;
+}
+
+.amazing-img-part img {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    
+    
+   
+}
+/* footer section */
+.Submit-btn{
+
+    padding: 10px 20px;
+    border: none;
+    background: #FD6E0A;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.footer-div{
+
+    display: grid;
+
+    grid-template-columns: repeat(2 , 1fr);
+    padding: 100px;
+    gap: 60px;
+
+}
+.footer-div-frist{
+    background-color: #FFF8F3 ;
+}
+.footer-input-div{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 20px;
+}
+.footer-icons-div{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.footer-icons-div a {
+  color: #FD6E0A;
+    
+}
+.footer-h1{
+    margin-bottom: 20px;
+}
+.footer-input{
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px dashed #FD6E0A;
+}
