@@ -370,3 +370,125 @@
     border-radius: 10px;
     border: 1px dashed #FD6E0A;
 }
+
+/* animaton section  */
+.typing {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    animation: typing 4s steps(8) infinite,
+               blink .7s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* secound animation */
+
+.fade-up {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3nd animation */
+.glow {
+    color: rgb(255, 255, 255);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #FD6E0A;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #FD6E0A,
+            0 0 20px #FD6E0A,
+            0 0 40px #FD6E0A;
+    }
+}
+/* animation 4th */
+.bounce {
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* animation 5th */
+.color-change {
+    animation: color 3s infinite;
+}
+
+@keyframes color {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+/* animation 6th */
+.rotate {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
